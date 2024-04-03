@@ -1,0 +1,10 @@
+h3{
+    text-align: center;
+    align-content: end;
+}
+img{
+    border-radius: 50px;
+    border-color: crimson;
+    width: 200px;
+    height: 300px;
+}
