@@ -1,1 +1,36 @@
-fff
+body{
+    background-color: black;
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 4cm;
+    background-image: url(water.jpg);
+    color: transparent;
+    background-clip: text;
+}
+h2{
+    font-size: 1cm;
+    background-image: url(maldive.jpg);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+h3{
+    font-size: 1cm;
+    background-image: url(seychelles.jpg);
+    color: transparent;
+    background-clip: text; 
+    text-align: center;
+}
+h4{
+    font-size: 1cm;
+    background-image: url(greece.jpg);
+    color: transparent;
+    background-clip: text; 
+    text-align: center;
+}
+p{
+    text-align: center;
+}
