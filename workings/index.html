@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+  
+  <title>Tofunmi Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="wrapper">
+    <div class="container">
+      <img src="./assets/images/logo.svg  " class="pic">
+    </div>
+    <nav>
+       <ul class="list">
+          <li class="center"><a href="Home" class="center_link"> Home</a></li>
+          <li class="center"><a href="New" class="center_link">New</a></li> 
+          <li class="center"><a href="Popular" class="center_link">Popular</a></li>
+          <li class="center"><a href="Trending" class="center_link">Trending</a></li>
+          <li class="center"><a href="Categories" class="center_link">Categories</a></li>
+        </ul>
+       </nav>
+  </section>
+
+        
+        <section>
+          <div>
+            <img src="./assets/images/image-web-3-desktop.jpg" class="image" >
+            <div class="note">
+              <h1 class="h">
+                The Bright<br> Future of<br> Web 3.0?
+              </h1>
+                   <p class="p">We dive into the next evolution of the web that<br> claims to put the power of the platforms back<br> into the hands of the people. 
+                       But is it really<br> fulfilling its promise? <a href="READ MORE" class="a">READ MORE</a></p><br>
+                      </div>
+          </div>
+          <div class="item">
+            <div class="div">
+              <h3 class="h3">New</h3>
+              <h4 class="h4">Hydrogen VS Electric Cars.</h4>
+              <p class="p">Will hydrogen-fueled cars ever catch up <br>to EVs?</p>
+               </div>
+               
+               <div>
+                <h4>The Downsis of AI Artistryde</h4>
+           <p> What are the possible adverse effects of<br> on-demand AI image generation?</p> 
+               </div>
+
+               <div>
+                 
+           <h4>Is VC Funding Drying Up?</h4>
+           <p> Private funding by VC firms n 50% <br>YOY. We take a look at what that means.</p>
+       </div>
+        </div>
+            
+       
+     
+       </section>
+       
+      
+          <section>
+          <div class="type">
+            <img src="./assets/images/image-retro-pcs.jpg">
+            <div class="index">
+            <h1 class="dry">01</h1>
+           <h5 class="intro">Reviving Retro PCs</h5>
+            <p class="base" >What happens when old PCs <br>are given modern upgrades?</p><br>
+             </div>
+
+          <img src="./assets/images/image-top-laptops.jpg">
+          <div class="index">
+          <h1 class="dry">02</h1>
+          <h5 class="intro">Top 10 Laptops of 2022</h5> 
+         <p class="base">Our best picks for various <br>needs and budgets.</p>
+           </div>
+        
+          <img src="./assets/images/image-gaming-growth.jpg">
+          <div class="index">
+          <h1 class="dry">03</h1>
+          <h5 class="intro">Growth of Gaming</h5> 
+         <p class="base"> How the pandemic has sparked<br> fresh opportunities.</p> 
+         </div>
+        </div>
+        </sectionn>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tofunmi</a>.
+  </div>
+</body>
+</html>
+*{
+  padding: 1px;
+  margin: 1px;
+  box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+}
+
+
+.container{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  justify-content: space-between;
+}
+
+#input{
+  display: none;
+}
+
+
+.navbar{
+  display: none;
+  background-color: hsla(240, 100%, 5%, 0.442);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition:  ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menucontainer{
+  position: relative;
+  display: block;
+  width: 32px;
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: space-between;
+}
+
+.classlist{
+  position: absolute;
+  background-color: hsla(36, 100%, 99%);
+  top: 0;
+  left: 25%;
+  bottom: 0;
+  width: 100%;
+  padding: 30% 2rem;
+}
+
+.listitems{
+  list-style: none;
+  margin-bottom: 200px;
+  font-size: large;
+}
+
+.listlink{
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+  display: block;
+}
+
+.menuButton{
+  position: absolute;
+  z-index: 1000;
+}
+
+.hamburger{
+  background-color: black;
+  display: block;
+  width: 2rem;
+  position: absolute;
+  z-index: 1000;
+  height: 3px;
+  justify-content: space-between;
+}
+
+.hamburger ::after{
+  content: "";
+  top: 6px;
+  background-color: black;
+  display: block;
+  width: 2rem;
+  position: absolute;
+  z-index: 1000;
+  height: 3px;
+  justify-content: space-between;
+}
+
+.hamburger ::before{
+  content: "";
+  top: -6px;
+  background-color: black;
+  display: block;
+  width: 2rem;
+  position: absolute;
+  z-index: 1000;
+  height: 3px;
+  justify-content: space-between;
+}
+
+.main_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input:checked{
+  position: absolute;
+  right: 1rem;
+  z-index: 1000;
+}
+
+#input:checked ~ .menucontainer .hamburger{
+  transform: rotate(0.625turn);
+}
+
+#input:checked ~ .menucontainer .hamburger::before{
+  transform: rotate(90deg) translate(6px);
+}
+
+#input:checked ~ .menucontainer .hamburger::after{
+  opacity: 0;
+}
+
+#input:checked + .navbar{
+  transform: translate(0%);
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_1{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 100px;
+  justify-items: none;
+  
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.wrapper .img{
+  height: 50%;
+}
+
+.wrapper .img  img{
+ width: 100%; 
+
+  
+}
+
+/*.op{
+  display: flex;
+  margin-right: 100px;
+  justify-content: space-between;
+}*/
+
+h1{
+  font-weight:  large;
+  font-style: bold;
+  font-size: 35px;
+  color: black;
+  
+}
+
+p{
+  color: grey;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.a{
+  display: block;
+  border: 1px solid  hsl(5, 85%, 63%);
+  width: 150px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(5, 85%, 63%); 
+  margin-top: 20px;
+  letter-spacing: 3px;
+}
+
+.item{
+   border: 1px solid  hsl(240, 100%, 5%);
+   padding: 10px 10px 10px 10px;
+   background-color: hsl(240, 100%, 5%);
+   margin-left: 10px;
+   margin-right: 10px;
+   padding-left: 10px;
+   padding-right: 5px;
+   float: right;
+   justify-content: none;
+   
+}
+
+h3{
+  color: brown;
+  font-weight: xx large;
+  font-style: bolder;
+  font-size: 50px;
+}
+h4{
+  color: hsl(36, 100%, 99%);
+
+  
+}
+
+.pic{
+  width: 25%;
+  display: inline-block;
+}
+
+.center{
+  margin-top: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.text{
+  display: inline-block;
+}
+
+.index{
+  color: grey;
+}
+
+/*
+@media screen and (min-width: 600px){
+ .hamburger{
+  display: none;
+ }
+
+ .item{
+  border: 1px solid  hsl(240, 100%, 5%);
+  padding: 10px 10px 10px 10px;
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  float: right;
+  height: 550px;
+}
+
+  p{
+  color: grey;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+  .op{
+      display: flex;
+      margin-right: 100px;
+      justify-content: none;
+      gap: ;
+  }
+}  
+  
+
+
+
+
+/* 
+*{
+  padding: 4px;
+  margin: 4px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+section{
+  display: flex;
+}
+
+.container{
+  display: flex;
+  margin: 2px 0 0 2px;
+  justify-content: space-between;
+}
+.list{
+  display: flex;
+  list-style-type: none;
+  padding-left: 100px;
+}
+.center_link{
+  text-decoration: none;
+}
+.item{
+  background-color: hsl(240, 100%, 5%);
+}
+
+.pic{
+  width: 100px;
+}
+.image{
+  width: 1100px;
+}
+
+.note{
+  display: flex;
+  justify-content: space-between;
+}
+.h{
+  font-weight: larger;
+  font-style: normal;
+  font-size: 70px;
+  padding-bottom: 1px;
+  color: hsl(240, 100%, 5%);
+}
+.p{
+  color: grey;
+}
+.item{
+   color: white;
+   padding: 20px 20px 20px 20px;
+   margin: 20px 20px 20px 20px;
+   height: 600px;
+   margin-bottom: 1px solid;
+   
+}
+h3{
+  color: brown;
+  font-weight: xx large;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+h4{
+  font-weight: bolder;
+  font-size: 25px;
+}
+p{
+  color: grey;
+}
+div{
+  padding-bottom: 60px;
+}
+.a{
+  display: block;
+  margin-top: 50px;
+  border: 3px solid red;
+  padding: 10px 10px 10px 10px;
+  width: 200px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  word-spacing: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.type{
+  display: inline-flex;
+  justify-items: stretch;
+}
+.index{
+  display: block;
+  justify-items: center;
+}
+.dry{
+  font-size: larger;
+  font-style: normal;
+  font-size: 70px;
+  padding-bottom: 1px;
+  color: grey;
+}
+.intro{
+  font-size: medium;
+}
+.base{
+  color: grey;
+}
+
+
+
+
+
+
+
+*/

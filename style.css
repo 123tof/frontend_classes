@@ -1,0 +1,64 @@
+*{
+    padding: 3px;
+    margin: 3px;
+    box-sizing: border-box;
+    text-align: start;
+    background-image: url("star.jpg");
+    background-size: cover;
+}
+
+marquee{
+    font-size: xx-large;
+    color: wheat;
+    font-style: oblique;
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    text-align: left;
+    border-radius: 1500px;
+    border: ipx transparent;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.info{
+    font-style: italic;
+    font-size: xx-large;
+    color: blueviolet;
+}
+
+p{
+    font-weight: 20px;
+    font-style: bold;
+    
+}
+
+section{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a{
+    border: 1px solid transparent;
+    letter-spacing: 4px;
+    color: whitesmoke;
+    font-size: larger;
+    text-decoration: none;
+    border-radius: 7px;
+    padding-top: 4px;
+    background: transparent;
+}
+
+h3{
+    color: azure;
+    text-decoration: underline;
+    padding-top: 20px;
+    font-size: xx-large;
+    font-style: bolder;
+}
+

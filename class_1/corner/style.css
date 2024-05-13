@@ -1,0 +1,27 @@
+*{
+    padding: 2px;
+    margin: 2px;
+}
+.p{
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.p1{
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section{
+    display: flex;
+}
+
+section1{
+    display: flex;
+}
+
